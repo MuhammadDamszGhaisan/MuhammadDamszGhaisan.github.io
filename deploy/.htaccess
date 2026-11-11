@@ -1,0 +1,40 @@
+# ============================================================
+#  MAGSTORE - .htaccess untuk web root hosting
+#  Semua file aplikasi berada di web root, tetapi yang bisa
+#  diakses hanya isi folder public/ (dilempar otomatis).
+# ============================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Permintaan yang sudah menuju public/ dibiarkan apa adanya
+    RewriteCond %{REQUEST_URI} !^/public/
+
+    # Selain itu, arahkan ke public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Jangan tampilkan daftar isi folder
+Options -Indexes
+
+# Tolak akses ke file-file sensitif (lapisan kedua)
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(env|log|sql|md|json|lock|dist|ini|sh|bat|ps1|vbs|bak|old|swp)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

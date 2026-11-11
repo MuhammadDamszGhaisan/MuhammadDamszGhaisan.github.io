@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "name": "MAGSTORE (kasir)",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "window.title": "MAGSTORE - ${activeEditorShort}${separator}${rootName}"
+    }
+}

@@ -1,0 +1,22 @@
+LINK WEBSITE MAGSTORE (untuk pelanggan)
+================================================
+
+Smart Shopping, Easy Living.
+
+TAUTAN LANGSUNG (aktif sekarang):
+    https://increasingly-after-tiffany-ate.trycloudflare.com
+
+CARA PAKAI:
+1. Kirim tautan di atas ke pelanggan
+   (WhatsApp / SMS / media sosial / ditulis di brosur).
+2. Pelanggan cukup KLIK tautan itu, lalu website langsung terbuka.
+   Tidak perlu satu Wi-Fi dengan laptop.
+
+CATATAN:
+- Tautan aktif selama server & tunnel di laptop dalam keadaan menyala,
+  dan laptop terhubung internet.
+- Alamat tunnel (trycloudflare) bisa BERUBAH setiap laptop/tunnel di-restart.
+  Bila berubah, jalankan "Jalankan Website.bat" lagi untuk melihat tautan baru,
+  atau buka file URL-Publik.txt.
+- Untuk alamat yang benar-benar TETAP, upload paket hosting ke InfinityFree
+  (lihat panduan di folder deploy / Desktop).

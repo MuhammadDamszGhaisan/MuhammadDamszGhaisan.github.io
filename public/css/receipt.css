@@ -1,0 +1,9 @@
+
+        body { font-family: 'Courier New', monospace; max-width: 320px; margin: 20px auto; color: #000; }
+        .center { text-align: center; }
+        .line { border-top: 1px dashed #000; margin: 6px 0; }
+        table { width: 100%; font-size: 13px; }
+        .right { text-align: right; }
+        .total { font-weight: bold; font-size: 15px; }
+        .btn-print { display: block; margin: 20px auto; padding: 8px 20px; cursor: pointer; }
+        @media print { .btn-print { display: none; } }

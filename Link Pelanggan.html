@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2E7D32">
+<title>Link Pelanggan &middot; MAGSTORE</title>
+<style>
+  :root { --g:#2E7D32; --gd:#1B5E20; --o:#FF8C00; --oi:#A34F00; --ink:#1f2937; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    display: grid; place-items: center;
+    background:
+      radial-gradient(820px 480px at 6% -6%, rgba(46,125,50,.18), transparent 62%),
+      radial-gradient(720px 460px at 102% 0%, rgba(255,140,0,.14), transparent 60%),
+      linear-gradient(135deg, #2E7D32, #1B5E20);
+    color: var(--ink);
+  }
+  .card {
+    width: min(92vw, 560px);
+    background: #fff; border-radius: 22px;
+    padding: 34px 30px 30px; text-align: center;
+    box-shadow: 0 30px 60px -25px rgba(0,0,0,.5);
+  }
+  .logo { height: 70px; width: auto; max-width: 190px; object-fit: contain; }
+  h1 { font-size: 1.5rem; margin: .6rem 0 .15rem; color: var(--gd); }
+  .slogan { color: var(--oi); font-weight: 700; margin: 0 0 1rem; }
+  .sub { color: #64748b; margin: 0 0 1.2rem; }
+  .qr { width: 240px; height: 240px; margin: 0 auto 1rem; display: block; border: 8px solid #fff; border-radius: 14px; }
+  .linkbtn {
+    display: block; text-decoration: none; color: #fff;
+    background: linear-gradient(135deg, #43a047, var(--g) 55%, var(--gd));
+    padding: 15px 18px; border-radius: 14px;
+    font-size: 1.1rem; font-weight: 800; letter-spacing: .01em;
+    box-shadow: 0 14px 28px -12px rgba(46,125,50,.9);
+    word-break: break-all;
+  }
+  .linkbtn:hover { filter: brightness(1.05); }
+  .direct { margin-top: .9rem; font-size: .82rem; color: #64748b; word-break: break-all; }
+  .direct a { color: var(--oi); }
+  .hint { margin-top: 1.1rem; font-size: .85rem; color: #334155; background:#FFF3E0; border-radius: 12px; padding: 12px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="img/logo-icon.png" alt="MAGSTORE">
+    <h1>MAGSTORE</h1>
+    <p class="slogan">Smart Shopping, Easy Living.</p>
+    <p class="sub">Scan QR atau klik tombol di bawah untuk membuka website.</p>
+
+    <img class="qr" src="QR Pelanggan.png" alt="QR Code Website">
+
+    <a class="linkbtn" href="https://increasingly-after-tiffany-ate.trycloudflare.com">Buka Website</a>
+
+    <p class="direct">
+      Tautan langsung:
+      <a href="https://increasingly-after-tiffany-ate.trycloudflare.com">
+        https://increasingly-after-tiffany-ate.trycloudflare.com
+      </a>
+    </p>
+
+    <div class="hint">
+      Pelanggan dapat membuka website dari jaringan/kuota apa pun &mdash;
+      tidak perlu satu Wi-Fi dengan laptop. Cukup buka tautan di atas.
+    </div>
+  </div>
+</body>
+</html>

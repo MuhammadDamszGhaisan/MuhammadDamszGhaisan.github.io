@@ -1,0 +1,24 @@
+/* Layout panel admin */
+.sidebar {
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.content { margin-left: 240px; }
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .content { margin-left: 0; }
+}
